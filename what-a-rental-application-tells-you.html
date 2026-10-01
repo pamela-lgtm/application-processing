@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a Rental Application Actually Tells You | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;--red:#B5543C;--rose:#D4886F;--green:#4E8C6A;--slate:#6B7C8C}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;font-weight:400;font-size:17px;line-height:1.72}
+.wrap{max-width:780px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.7rem;line-height:1.1;margin:0 0 .5rem}
+h2{font-size:1.85rem;line-height:1.22;margin:0 0 .9rem}
+h3{font-size:1.2rem;margin:1.4rem 0 .5rem}
+p{margin:0 0 1.15rem}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1.15rem;padding-left:1.2rem}
+li{margin-bottom:.55rem}
+.mast{background:var(--charcoal);color:#F5F3EE;padding:32px 0 38px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto}
+.kicker{color:var(--gold);font-size:.92rem;margin:26px 0 4px}
+.mast h1{color:#FBFAF7}
+.mast h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1.08rem;max-width:62ch}
+.bottom{background:var(--teal);color:#fff;padding:30px 0}
+.bottom h2{color:#fff;font-size:1.5rem;margin-bottom:.4rem}
+.bottom p{color:#DDEFEC;margin-bottom:.8rem}
+.bottom b{color:#fff}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.28);border-radius:10px;overflow:hidden;margin:16px 0 14px}
+.vs div{background:var(--teal);padding:18px 20px}
+.vs div:last-child{background:var(--teal-deep)}
+.vs .k{font-size:.8rem;color:#CDE8E5;text-transform:uppercase;letter-spacing:.05em}
+.vs .v{font-family:'Cormorant Garamond',serif;font-size:2.4rem;line-height:1.1;color:#fff}
+.vs .n{font-size:.86rem;color:#CDE8E5}
+section{padding:40px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 22px}
+.st{background:#fff;padding:17px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:1.9rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.warn{color:var(--red)}
+.st .k{font-size:.84rem;color:var(--muted);margin-top:5px;line-height:1.45}
+.chart{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px 26px;margin:0 0 22px}
+.chart h3{margin:0 0 4px}
+.chart .cap{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+.bar{display:grid;grid-template-columns:160px 1fr;gap:13px;align-items:center;margin-bottom:11px;font-size:.93rem}
+.track{background:var(--panel);border-radius:4px;height:28px;overflow:hidden}
+.fill{height:28px;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:11px;color:#fff;font-weight:600;font-size:.88rem;white-space:nowrap}
+.fill.gr{background:var(--green)}.fill.g{background:var(--gold)}.fill.r{background:var(--red)}.fill.rs{background:var(--rose)}.fill.s{background:var(--slate)}.fill.t{background:var(--teal)}
+.src{font-size:.85rem;color:var(--muted);margin:14px 0 0;padding-top:13px;border-top:1px solid var(--line)}
+.quote{border-left:4px solid var(--gold);background:#fff;padding:21px 25px;border-radius:0 8px 8px 0;margin:0 0 24px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:1.24rem;line-height:1.5;margin-bottom:0}
+.quote p+p{margin-top:.7rem}
+.investor{background:var(--charcoal);color:#F5F3EE;border-radius:11px;padding:30px 32px;margin:0 0 24px}
+.investor h2{color:#FBFAF7;margin-bottom:.6rem}
+.investor p{color:#E3DFD8}
+.investor b{color:#fff}
+.investor .big{font-family:'Cormorant Garamond',serif;font-size:2.6rem;line-height:1.05;color:var(--gold);margin:4px 0 6px}
+.invgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.15);border-radius:9px;overflow:hidden;margin:18px 0}
+.invgrid div{background:#232323;padding:16px}
+.invgrid .v{font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--gold);line-height:1.1}
+.invgrid .k{font-size:.82rem;color:#B8B2A8;margin-top:4px;line-height:1.4}
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 12px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 16px}
+.dbody>*:last-child{margin-bottom:0}
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;background:#fff;min-width:500px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;padding:10px 12px;border-bottom:2px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line)}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr.tot td{font-weight:600;background:#F3F1EC;border-top:2px solid var(--charcoal)}
+footer{background:var(--charcoal);color:#B8B2A8;padding:34px 0;font-size:.9rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--gold);margin-bottom:9px}
+footer a{color:#8FD2CB}
+@media(max-width:700px){body{font-size:16.5px}h1{font-size:2rem}h2{font-size:1.5rem}.vs,.invgrid{grid-template-columns:1fr}.bar{grid-template-columns:108px 1fr;font-size:.85rem}.mast .tag{margin-left:0;width:100%}.investor{padding:24px 22px}}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">For Owners</span>
+    </div>
+    <p class="kicker">Owner Education · Resident Selection</p>
+    <h1>What a rental application<br><em>actually tells you.</em></h1>
+    <p class="sub">Choosing a resident is the single highest-stakes decision in owning a rental — larger than the rent, larger than the repairs. Here is how applications are read, what the numbers mean, and the mistakes that cost owners the most.</p>
+  </div>
+</header>
+
+<div class="bottom">
+  <div class="wrap">
+    <h2>The short version</h2>
+    <p>One bad placement can cost more than a year of good rent. The protection is not instinct or a good feeling in a showing — it is <b>written criteria, applied the same way to every applicant, every time.</b></p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>Why this matters more than the rent</h2>
+  <p>Owners spend most of their attention on the monthly number. Understandably — it is the figure on the lease. But the resident is the larger variable by a wide margin.</p>
+  <p>Consider what a difficult placement actually involves: missed rent while the process runs, legal fees, a vacancy afterward, a turnover that is heavier than normal, and often damage beyond the deposit. It is entirely possible for one placement to erase a year of income.</p>
+
+  <div class="quote">
+    <p>A well-qualified resident who pays on time, stays the term and returns the home in good condition is worth far more over twelve months than the extra hundred dollars anyone might have squeezed out at listing.</p>
+  </div>
+
+  <p>Which is why the goal at listing is never simply to get an application. It is to generate <b>enough interest to have a choice.</b> One application is not a choice — it is acceptance.</p>
+</section>
+
+<section>
+  <h2>The four things <em>an application reveals</em></h2>
+
+  <div class="box">
+    <h3>1. Income — can they afford it comfortably?</h3>
+    <p>Most professional criteria look at gross monthly income against the rent, usually expressed as a multiple. The reason is not arbitrary: a household stretched to its limit has no margin when a car breaks or hours get cut, and rent is what gives way.</p>
+    <p><b>What matters as much as the number is the verification.</b> Pay stubs, an offer letter, tax returns for self-employed applicants, or bank statements. Stated income is not income.</p>
+    <p><b>And the multiple alone is a blunt instrument.</b> Two households can both earn three and a half times the rent and be in completely different positions. If one carries four hundred dollars a month in obligations and the other carries two thousand eight hundred in car payments, student loans and card minimums, the second has almost no margin left. What actually predicts payment is not gross income against rent — it is what remains after the household's fixed obligations are met.</p>
+    <p>This is why debt reported on the credit file belongs in the income assessment rather than being treated as a separate credit question. It is also why it has to be written down as a standard and applied the same way to everyone, rather than left as a judgment about whether someone "owes a lot." Two things worth deciding in advance: how medical debt is treated, and whether an obligation with three payments remaining counts the same as one with five years to run.</p>
+  </div>
+
+  <div class="box">
+    <h3>2. Credit — how do they handle obligations?</h3>
+    <p>The score itself matters less than what sits behind it. A moderate score built on a thin file is a different thing entirely from the same score built on collections and charge-offs.</p>
+    <p>What we look at closely: recent payment history, outstanding collections, and whether any of it relates to housing. A medical collection from three years ago reads very differently from a judgment from a prior landlord.</p>
+  </div>
+
+  <div class="box">
+    <h3>3. Rental history — what did they do last time?</h3>
+    <p>This is the most predictive item on the entire application and the one most often skipped, because it takes actual work.</p>
+    <p>Verification means contacting the prior landlord directly and asking specific questions: did they pay on time, did they give proper notice, was the deposit returned, would you rent to them again. A current landlord with a problem resident has an incentive to give a glowing reference — which is why the <b>previous</b> landlord is often the more honest source.</p>
+  </div>
+
+  <div class="box">
+    <h3>4. Public records — is there anything that changes the picture?</h3>
+    <p>Prior evictions and relevant judgments, reviewed against published criteria and applicable law. The point is never to find a reason to decline — it is to make sure a decision is made on complete information rather than an impression.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Fair housing is not <em>a formality</em></h2>
+  <p>This is where good intentions get owners into genuine trouble, and it is worth being precise.</p>
+  <p>Federal law protects applicants from discrimination based on <b>race, color, national origin, religion, sex, familial status and disability</b>, with additional protections at state and local level. Familial status means households with children — a protection many owners do not realize exists.</p>
+
+  <div class="box">
+    <h3>Where well-meaning owners go wrong</h3>
+    <ul>
+      <li><b>"I'd rather not have kids in the home — the carpet is new."</b> That is familial status discrimination, regardless of the reason behind it.</li>
+      <li><b>"They seem like a better fit for the neighborhood."</b> Subjective fit is exactly where bias enters, whether or not anyone intends it.</li>
+      <li><b>Making an exception for one applicant.</b> If criteria are waived for one household and applied to another, the difference has to be explained — and "I had a good feeling" is not a defensible explanation.</li>
+      <li><b>Treating a service or assistance animal as a pet.</b> They are not pets under the law, and pet restrictions, pet rent and weight limits generally do not apply to them.</li>
+    </ul>
+  </div>
+
+  <div class="quote">
+    <p>This is the real reason written criteria matter. They are not bureaucracy. They are the record that shows every applicant was measured against the same standard.</p>
+  </div>
+
+  <p>It is also why a professional manager will decline to make an exception that an owner requests in good faith. The exception itself is the exposure.</p>
+</section>
+
+<section>
+  <h2>What the application <em>does not</em> tell you</h2>
+  <p>Worth knowing, because it keeps expectations honest.</p>
+  <ul>
+    <li><b>Whether they will stay.</b> Screening predicts payment far better than it predicts tenure. Life changes.</li>
+    <li><b>How they will treat the home.</b> Rental history is the best available proxy, and it is a proxy rather than a guarantee.</li>
+    <li><b>Whether they will be easy to deal with.</b> Some excellent payers are demanding, and some lovely people are chronically late.</li>
+  </ul>
+  <p>Good screening does not eliminate risk. It moves the odds substantially, and over a portfolio and a number of years that difference is enormous.</p>
+</section>
+
+<section>
+  <h2>Where owners lose money <em>on this decision</em></h2>
+
+  <div class="box">
+    <h3>Accepting the first application because the home has been empty</h3>
+    <p>This is the most expensive version, and it is why pricing and screening are connected. An overpriced home produces one marginal applicant after six weeks, and by then the pressure to say yes is enormous. A correctly priced home produces several applicants in the first fortnight and a genuine choice.</p>
+  </div>
+
+  <div class="box">
+    <h3>Overriding the criteria for a sympathetic story</h3>
+    <p>Applicants with difficult circumstances are often entirely genuine, and sometimes they turn out fine. But a decision made on sympathy rather than criteria is both a financial risk and a fair housing one, because the next sympathetic story will be weighed differently.</p>
+  </div>
+
+  <div class="box">
+    <h3>Skipping the prior landlord call</h3>
+    <p>It takes fifteen minutes and it is the most predictive step in the process. It is also the step most commonly skipped, because it is the only one that cannot be automated.</p>
+  </div>
+
+  <div class="box">
+    <h3>Letting a showing impression override the file</h3>
+    <p>Pleasant, well-presented people are not necessarily reliable residents, and a quiet applicant with a flawless five-year history is frequently the better placement. The file is more reliable than the impression.</p>
+  </div>
+</section>
+
+<section>
+  <h2>What to ask any manager you work with</h2>
+  <p>Whether that is us or anyone else, these five questions tell you how seriously screening is taken.</p>
+  <ul>
+    <li><b>Do you publish written resident selection criteria</b>, and can I read them?</li>
+    <li><b>Do you contact previous landlords directly</b>, or only the current one?</li>
+    <li><b>How do you verify income</b> — documents, or the applicant's word?</li>
+    <li><b>What happens when an applicant falls slightly short?</b> Is there a defined process, or a judgment call?</li>
+    <li><b>Who makes the final decision</b>, and on what basis?</li>
+  </ul>
+  <p>The answers will tell you a great deal, and any manager who cannot answer them clearly is making these decisions by feel.</p>
+</section>
+
+<section>
+  <h2>The short list worth keeping</h2>
+  <ul>
+    <li><b>The resident matters more than the rent.</b> One difficult placement can cost more than a year of income.</li>
+    <li><b>Written criteria, applied identically every time.</b> That is the protection — both financially and legally.</li>
+    <li><b>Verify everything.</b> Income with documents, rental history with a phone call to the previous landlord.</li>
+    <li><b>Income is not the same as capacity.</b> Two applicants earning the same multiple of rent can be in very different positions once their existing obligations are counted.</li>
+    <li><b>Fair housing is not optional</b>, and the exception an owner requests in good faith is usually where the exposure begins.</li>
+    <li><b>Price so you have a choice.</b> One application is not a selection; it is acceptance under pressure.</li>
+  </ul>
+
+  <p style="margin-top:24px">If you would like to see what published resident selection criteria actually look like, we are glad to send ours over. No obligation — it is a useful benchmark whoever manages your property.</p>
+  <p><b>Verandah Properties, LLC</b><br><a href="tel:4078550331">407-855-0331</a></p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b> · Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · 407-855-0331</p>
+    <p style="font-size:.84rem;color:#8C877F">General educational information only. Fair housing law is detailed and changes over time, and protected classes vary by state and locality — consult your own attorney for guidance on a specific situation. Nothing here is legal advice.</p>
+  </div>
+</footer>
+
+</body>
+</html>
